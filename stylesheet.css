@@ -108,8 +108,35 @@
             width: 50%;
             padding: 10px;
           }
+
+          /*footer responsive*/
+          .footer {
+		          height: 120px;
+		          padding: 10px 20px;
+	        }
+
+	        .footer-logo {
+		          float: left;
+		          padding: 5px 3px;
+	        }
+
+	        .footer-list  {
+		          float: right;
+		          padding-top: 3px;
+	        }
+
+	       .footer-list li {
+		         float: none;
+		         padding: 2px 3px;
+		         font-size: 12px;
+	        }
+
+	       .footer-list a {
+		         display: block;
+		         font-style: normal;
+	        }
       }
-      
+
       @media screen and (max-width: 600px) {
        .dua-kolom{
            width: 100%;
@@ -125,21 +152,84 @@
             float: left;
             width: 100%;
             padding: 10px;
-          }
+        }
 
         .inText{
             display: block;
             margin-bottom: 1em;
             width: 150px;
         }
-  
+
         .inArea{
           width: 150px;
         }
-  
+
         .inKirim{
             margin-left: 98px;
         }
       }
 
       /* Selesai Konten Tambahan @rizkytri */
+      /*footer responsive*/
+        .footer {
+		        height: 90px;
+	      }
+
+	      .footer-logo {
+		        float: inherit;
+		        padding: 0px;
+		        margin: 2px 139px 0px;
+	      }
+
+	      .footer-list {
+		        float: left;
+		        padding: 0px;
+		        margin: 0px
+	      }
+
+	      .footer-list li{
+		        float: left;
+		        padding: 3px 5px;
+		        text-align: center;
+		        margin: 1px 15px;
+		    }
+      }
+
+      /* Footer..... */
+li {
+	list-style: none;
+}
+
+
+.footer {
+	background-color: #C4C4C4;
+	color: black;
+	height: 160px;
+	padding: 10px 15px;
+
+}
+
+.footer-logo {
+	float: left;
+	font-size: 36px;
+	padding-left: 20px;
+	padding-top: 10px;
+	font-display: block;
+	color: #FFFFFF;
+	font-style: normal;
+}
+
+.footer-list {
+	float: right;
+	padding-top: 10px;
+
+}
+
+.footer-list li {
+	padding-bottom: 5px;
+	text-align: right;
+}
+.footer-list a{
+	font-display: block;
+	color: #fff;
+}
