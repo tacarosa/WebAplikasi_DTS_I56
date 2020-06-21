@@ -1,4 +1,4 @@
-/* Konten Tambahan */
+
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -9,29 +9,51 @@
      padding: 0;
     }
 
-    main > .kontainer-tambahan{
+    /* Mulai Konten Tambahan @rizkytri */
+    
+    main > .kontainer-tambahan-atas{
         background-color: #fff;
-
+        padding-left: 180px;
     }
 
-    .h2Tanya{
+    .dua-kolom{
+        text-align: center;
+        float: left;
+        width: 50%;
+    }
+
+    .dua-kolom> h2{
+        padding-top: 3em;
+        padding-right: 3em;
+    }
+
+    .studio{
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    main > .kontainer-tambahan-bawah{
+        background-color: #fff;   
+    }
+
+    .kontainer-tambahan-bawah > h2{
         padding-top: 2em;
         text-align: center;
         padding-bottom: 2em;
     }
 
-    .column {
+    .empat-kolom {
         text-align: center;
         float: left;
         width: 25%;
         padding: 10px;
       }
 
-    .icon{
+    .ikon{
         max-width: 100px;
     }
 
-    .row::after {
+    .baris::after {
         content: "";
         display: table;
         clear: both;
@@ -56,15 +78,31 @@
     }
 
     .inKirim{
-          margin-left: 304px;
+          margin-left: 297px;
+          background-color: black;
+          color: white;
     }
 
-
     @media screen and (max-width: 992px) {
-        .icon{
+        main > .kontainer-tambahan-atas{
+            padding-left: 0px;
+        }
+        .dua-kolom >img{
+            padding-top: 2em;
+        }
+        .dua-kolom> h2{
+            font-size: medium;
+        }
+
+        .studio{
+            max-width: 240px;
+            max-height: 240px;
+        }
+        
+        .ikon{
             max-width: 80px;
         }
-        .column {
+        .empat-kolom {
             text-align: center;
             float: left;
             width: 50%;
@@ -100,10 +138,16 @@
       }
 
       @media screen and (max-width: 600px) {
-        .icon{
-            max-width: 40px;
-        }
-        .column {
+       .dua-kolom{
+           width: 100%;
+       }
+
+       .dua-kolom> h2{
+        padding-left: 3em;
+    }
+       
+     
+        .empat-kolom {
             text-align: center;
             float: left;
             width: 100%;
@@ -121,8 +165,11 @@
         }
 
         .inKirim{
-            margin-left: 304px;
+            margin-left: 98px;
         }
+      }
+
+      /* Selesai Konten Tambahan @rizkytri */
       /*footer responsive*/
         .footer {
 		        height: 90px;
