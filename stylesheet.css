@@ -152,6 +152,21 @@ a {
 
 /* end header  */
 
+/*konten dibawah landpage*/
+.testimoni{
+  height: 10px;
+}
+.testimoni-1{
+   letter-spacing: 3px;
+   font-size: 30px;
+   text-align: center;
+}
+.testi-2{
+    size: 10px;
+    float: left;
+    padding-left: 50px;
+
+    }
 
 /*land-page */
 .land-page {
