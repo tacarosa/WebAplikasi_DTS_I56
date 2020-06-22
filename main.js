@@ -36,9 +36,4 @@ function myFunction() {
         let classes2 = document.getElementById("empat") 
         classes2.classList.add("fadeIn")
     }
-    
-    if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
-        let classes2 = document.getElementById("lima") 
-        classes2.classList.add("fadeIn")
-    }
 }
