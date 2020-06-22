@@ -30,10 +30,11 @@ a {
 
 /*land-page */
 .land-page {
-  margin-top: 65px;
-  width: 75%;
+  margin-top: 70px;
+  margin-bottom: 70px;
   background-image: url(img/land.jpg);
-  background-size: cover;
+  background-image: 100% auto;
+
 }
 
 .icon-list h1{
@@ -50,6 +51,7 @@ a {
   text-align: center;
 
 }
+
   .logo {
     width: 68px;
     margin-top: 4px;
