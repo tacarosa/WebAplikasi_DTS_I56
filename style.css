@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body,
+  ul, ol, li,
+  h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Lucida Grande";
+  }
+  
+
+
+
+/*    copy   */
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(9, 78, 94, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    width: 68px;
+    margin-top: 4px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+ .header-right a {
+  position: relative;
+}
+ .header-right a:after {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: white;
+  background: #aaa;
+  height: 1px;
+}
+.header-right a:hover:after {
+  width: 30%;
+}
+ .button {
+    float: right;
+    background-color: #0cf;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.6s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+ .button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+}
+ .button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #008fb3;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+ .button:hover {
+    color: #fff;
+}
+ .button:hover:before {
+    width: 100%;
+}
+
+
+ .menu-icon {
+    
+    display: none;
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+  }
+
+/*   end   */
+
+
+@media all and (max-width: 670px) {
+    .header-right {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: block;
+      margin-top: -2px;
+      
+    }
+
+    .button {
+        padding: 0.5rem 0.7rem;
+        border-radius: 7rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+        margin-top: 18px;
+        margin-right: 10px;
+    }
+    
+}  
