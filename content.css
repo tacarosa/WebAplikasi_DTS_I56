@@ -1,0 +1,102 @@
+.main-content-header {
+    background-color: rgb(176, 196, 222) ;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #FFFFFF;
+    padding: 4vw 10vw 0;
+    height: 100%;
+}
+
+.main-content > h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    margin-bottom: 150px;
+}
+
+.content-image {
+    width: 30vw;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content-teks p {
+    line-height: 24px;
+}
+
+#dua .content-teks, #empat .content-teks {
+    padding-left: 10vw;
+}
+
+.ml {
+    margin-left: 10vw;
+}
+
+.content-image:hover {
+    transform: scale(1.01);
+}
+
+.ikon:hover {
+    transform: scale(1.1);
+}
+
+.btn-see-more {
+    background-color: #4AC7E4;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    padding: 15px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn-see-more:active, .btn-see-more:focus {
+    outline: none;
+}
+
+.btn-see-more:hover {
+    opacity: 1;
+}
+
+.invisible {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .content-item {
+        grid-template-columns: auto;
+        margin-bottom: 80px;
+    }
+    .content-image {
+        width: 75vw;
+        margin: 20px auto;
+    }
+    #dua .content-teks, #empat .content-teks {
+        padding-left: 0;
+    }
+    #dua .content-image.visible, #empat .content-image.visible {
+        display: none;
+    }
+    #dua .content-image.invisible, #empat .content-image.invisible {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .content-item {
+        margin-bottom: 50px;
+    }
+}

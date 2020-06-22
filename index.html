@@ -1,119 +1,186 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="icon" href="icon.png" type="image/png" sizes="16x16">
-    <title>Wedding Organizer</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='stylesheet.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./stylesheet.css'>
-    <script src='main.js'></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel="icon" href="img/photograph.svg" type="image/svg" sizes="16x16">
+  <title>Bazith Studio</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='stylesheet.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='content.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='animation.css'>
+  <script src='main.js'></script>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-        <div class="header-left">
-            <img class="logo" src="img/logo.png">
+  <header>
+    <div class="container" id="home">
+      <div class="header-left">
+        <img class="logo" src="img/logo.png">
+      </div>
+      <a href="#" class="menu-icon"><span class="fa fa-bars"></span></a>
+      <a href="#order" class="button">Order Now!</a>
+      <div class="header-right">
+        <a href="#home" class="borderbot">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#content">Our Service</a>
+      </div>
+    </div>
+    <!-- href="#about-us  untuk akses konten about-us -->
+  </header>
+  <main>
+    <!-- land page -->
+    <div class="land-page">
+      <div class="icon-list">
+        <h1 class="slideInLeft"> BAZITH STUDIO </h1>
+        <p class="slideInRight"> Bikin Ide Kreatifmu Semenarik Mungkin Bersama Kami. </p>
+      </div>
+    </div>
+    <!-- Landing Page -->
+    
+    <!-- Mulai Konten Tambahan Atas -->
+    <div class="kontainer-tambahan-atas" id="about-us">
+      <div class="baris">
+        <div class="dua-kolom">
+          <img src="img/studio.svg" class="studio">
         </div>
-        <a href="#" class="menu-icon"><span class="fa fa-bars"></span></a>
-        <a href="#" class="button">Order Now!</a>
-        <div class="header-right">
-          <a href="#" class="borderbot">Home</a>
-          <a href="#">Our Service</a>
-          <a href="#">About Us</a>
+        <div class="dua-kolom">
+          <h2> BAZITH merupakan sebuah studio desain berskala global di Indonesia, menerapkan sebuah desain wawasan
+            tanpa batas dan menawarkan perubahan yang positif.</h2>
         </div>
       </div>
-      <!-- href="#about-us  untuk akses konten about-us -->
-    </header>
-    <main>
-	  <!-- land page -->
-      <div class="land-page">
-        <div class="icon-list"> 
-            <h1> BAZITH STUDIO </h1>
-            <p> Bikin Ide Kreatifmu Semenarik Mungkin Bersama Kami. </p>  
+    </div>
+    <!-- Selesai Konten Tambahan Atas -->
+
+    <!-- Content -->
+    <div class="main-content-header" id="content">
+      <h1>Jasa yang Kami Tawarkan</h1>
+    </div>
+    <div class="main-content">
+      <div class="content-item" id="satu">
+        <div class="content-teks">
+          <h1>Photography Service</h1>
+          <p>
+            Kami melayani semua jenis photography mulai dari wedding, pre-wedding, khitanan, ulang tahun,
+            engagement, gethering, dan lainnya. Harga terjangkau dan berkualitas. Galeri photography dapat dilihat
+            dengan
+            mengklik tombol dibawah.
+          </p>
+          <button class="btn-see-more" onclick="handleCLick()">
+            Lihat Detail
+          </button>
+        </div>
+        <img src="img/photography.jpeg" alt="photo" class="content-image ml" />
+      </div>
+
+      <div class="content-item" id="dua">
+        <img src="img/video.jpg" alt="photo" class="content-image visible" />
+        <div class="content-teks">
+          <h1>Videography Service</h1>
+          <p>
+            Abadikan setiap moment atau acara anda dengan jasa videography kami, dapat juga
+            mendokumentasikan acara seminar, gathering, workshop maupun talkshow yang anda selenggarakan.
+            Jadikan momen berharga anda terabadikan.
+          </p>
+          <button class="btn-see-more" onclick="handleCLick()">
+            Lihat Detail
+          </button>
+        </div>
+        <img src="img/video.jpg" alt="photo" class="content-image invisible" />
+      </div>
+      <div class="content-item" id="tiga">
+        <div class="content-teks">
+          <h1>Wedding Photography</h1>
+          <p>
+            Kenangan yang serba mempesona dihari pernikahan itu hanya akan abadi dalam sebuah Photo dan Video
+            dokumentasi yang sempurna.
+            Kami menyediakan jasa pengabadian moment pernikahan dengan kualitas yang terjamin dengan harga terjangkau.
+            Paket wedding photography ini tersedia
+            dalam beberapa pilihan. Untuk lebih jelas lihat detail halaman.
+          </p>
+          <button class="btn-see-more" onclick="handleCLick()">
+            Lihat Detail
+          </button>
+        </div>
+        <img src="img/wedding.jpg" alt="photo" class="content-image ml" />
+      </div>
+
+      <div class="content-item" id="empat">
+        <img src="img/undangan.jpg" alt="photo" class="content-image visible" />
+        <div class="content-teks">
+          <h1>Digital Printing</h1>
+          <p>
+            Ingin punya undangan yang menarik? Punya photo yang ingin di edit atau di edit ulang? Ingin hasil disajikan
+            dalam bentuk cetakan?
+            Bazith Orgenizer menyediakan jasa editing photo sekaligus cetak dengan berbagai pilihan paket.
+            Melayani juga jasa order dari luar kota via media online. Klik tombol di bawah untuk melihat paket.
+          </p>
+          <button class="btn-see-more" onclick="handleCLick()">
+            Lihat Detail
+          </button>
+        </div>
+        <img src="img/undangan.jpg" alt="photo" class="content-image invisible" />
+      </div>
+    </div>
+    <!-- Content -->
+    
+    <div class="kontainer"></div>
+    <!-- Mulai Konten Tambahan Bawah -->
+    <div class="kontainer-tambahan-bawah">
+      <h2 class="h2Tanya">Mengapa masyarakat menyukai BAZITH?</h2>
+      <div class="baris">
+        <div class="empat-kolom">
+          <img src="img/photograph.svg" class="ikon">
+          <h2>Fotografi</h2>
+          <p>Kami memiliki fotografer handal</p>
+        </div>
+        <div class="empat-kolom">
+          <img src="img/handycam.svg" class="ikon">
+          <h2>Videografi</h2>
+          <p>Kami memiliki videografer berpengalaman</p>
+        </div>
+        <div class="empat-kolom">
+          <img src="img/painting.svg" class="ikon">
+          <h2>Desain</h2>
+          <p>Kami memiliki desainer berkelas</p>
+        </div>
+        <div class="empat-kolom">
+          <img src="img/curator.svg" class="ikon">
+          <h2>Kurator</h2>
+          <p>Kami memiliki kurator tersertifikasi nasional</p>
         </div>
       </div>
-	    
-	 <!--konten dibawah land-page -->
-      <div class="testimoni">
-        <div class="testimoni-1"> Fotografi dan Editing </div>
-        <div class="testi-2">
-            <img src="img/testi.jpg">
-        </div>
-        <div class="testi-2"> 
-            <img src="img/testi-1.jpg">
-        </div>
-       </div>
-	    
-       <!-- Mulai Konten Tambahan Atas -->
-      <div class="kontainer-tambahan-atas" id="about-us">
-        <div class="baris">
-          <div class="dua-kolom">
-            <img src="img/studio.svg" class="studio">
-          </div>
-          <div class="dua-kolom">
-            <h2> BAZITH merupakan sebuah studio desain berskala global di Indonesia, menerapkan  sebuah desain wawasan tanpa batas dan menawarkan perubahan yang positif.</h2>
-          </div>
-        </div>
+      <div class="email" id="order">
+        <h3>Ayo daftar di BAZITH sekarang juga!</h3>
+        <input type="text" placeholder="Nama" class="inText">
+        <input type="email" placeholder=Email class="inText">
+        <textarea placeholder="Jelaskan kebutuhan kamu di sini" class="inArea"></textarea> <br>
+        <input type="submit" class="inKirim" onclick="handleCLick()">
       </div>
-        <!-- Selesai Konten Tambahan Atas -->  
-        <div class="kontainer"></div>
-        <!-- Mulai Konten Tambahan Bawah -->
-        <div class="kontainer-tambahan-bawah">
-            <h2 class="h2Tanya">Mengapa masyarakat menyukai BAZITH?</h2>
-            <div class="baris">
-                <div class="empat-kolom">
-                 <img src="img/photograph.svg" class="ikon"> 
-                    <h2>Fotografi</h2>
-                  <p>Kami memiliki fotografer handal</p>
-                </div>
-                <div class="empat-kolom">
-                    <img src="img/handycam.svg" class="ikon">
-                  <h2>Videografi</h2>
-                  <p>Kami memiliki videografer berpengalaman</p>
-                </div>
-                <div class="empat-kolom">
-                  <img src="img/painting.svg" class="ikon">
-                  <h2>Desain</h2>
-                  <p>Kami memiliki desainer berkelas</p>
-                </div>
-                <div class="empat-kolom">
-                <img src="img/curator.svg" class="ikon">
-                    <h2>Kurator</h2>
-                    <p>Kami memiliki kurator tersertifikasi nasional</p>
-                  </div>
-              </div>
-              <div class="email">
-                <h3>Ayo daftar di BAZITH sekarang juga!</h3>
-                <input type="text" placeholder="Nama" class="inText">
-                <input type="email" placeholder=Email class="inText">
-                <textarea placeholder="Jelaskan kebutuhan kamu di sini" class="inArea"></textarea> <br>
-                <input type="submit" class="inKirim"> 
-        </div>
-        </div>
-        </div>
-         <!-- Selesai Konten Tambahan Bawah -->
-    </main>
-        <!-- Mulai Footer -->
-    <footer>
-      <div class="footer">
-			  <div class="footer-logo">Bazith Photo</div>
-			   <div class="footer-list">
-				   <ul>
-					   <li><a href="about us">Tentang</a></li>
-					   <li><a href="Our-Services">Pelayanan</a></li>
-					   <li><a href="Career">Karir</a></li>
-					   <li><a href="Contact Us">Hubungi Kami !</a></li>
-					   <li><a href="FAQ">FAQ</a></li>
-				   </ul>
-			   </div>
-		   </div>
-	   </div>
-    </footer>
-      <!-- Selesai Footer -->
+    </div>
+    </div>
+    <!-- Selesai Konten Tambahan Bawah -->
+  </main>
+  <!-- Mulai Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-logo">Bazith Photo</div>
+      <div class="footer-list">
+        <ul>
+          <li><a href="about us">Tentang</a></li>
+          <li><a href="Our-Services">Pelayanan</a></li>
+          <li><a href="Career">Karir</a></li>
+          <li><a href="Contact Us">Hubungi Kami !</a></li>
+          <li><a href="FAQ">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- Selesai Footer -->
 </body>
+
 </html>

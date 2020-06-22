@@ -1,184 +1,186 @@
 /* Header  */
 
 a {
-    text-decoration: none;
-  }
-  
-  .clear {
-    clear: left;
-  }
-  
-  .container {
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-  .fa {
-    margin-right: 5px;
-  }
-  
-  header {
-    height: 65px;
-    width: 100%;
-    background-color:   rgb(176, 196, 222)!important;
-    position :fixed;
-    top: 0;
-    z-index: 10;
-    font-weight: bold;
-    font-size: 1rem;
-  }
+  text-decoration: none;
+}
 
-  .logo {
-    width: 68px;
-    margin-top: 4px;
-  }
-  
-  .header-left {
-    float: left;
-  }
-  
-  .header-right {
-    float: right;
-    margin-right: -25px;
-  }
-  
-  .header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-  
- .header-right a {
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgb(176, 196, 222)!important;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.logo {
+  width: 68px;
+  margin-top: 4px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a {
   position: relative;
 }
- .header-right a:after {
+
+.header-right a:after {
   position: absolute;
   bottom: 12px;
   left: 0;
   right: 0;
   margin: auto;
   width: 0%;
-  content: '.';
+  content: '';
   color: white;
   background: #aaa;
   height: 1px;
 }
+
 .header-right a:hover:after {
   width: 30%;
 }
- .button {
-    float: right;
-    background-color: #0cf;
-    display: inline-block;
-    padding: 0.75rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 0.15rem;
-    transition: all 0.6s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    margin-top: 12px;
-    margin-left: 30px;
+
+.button {
+  float: right;
+  background-color: #0cf;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.6s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 12px;
+  margin-left: 30px;
 }
 
- .button:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0cf;
-    border-radius: 10rem;
-    z-index: -2;
-}
- .button:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #008fb3;
-    transition: all 0.3s;
-    border-radius: 10rem;
-    z-index: -1;
-}
- .button:hover {
-    color: #fff;
-}
- .button:hover:before {
-    width: 100%;
+.button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
 }
 
- .menu-icon {
-    
-    display: none;
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-  }
+.button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
 
+.button:hover {
+  color: #fff;
+}
+
+.button:hover:before {
+  width: 100%;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+}
 
 @media all and (max-width: 670px) {
-    .header-right {
-      display: none;
-    }
-    
-    .menu-icon {
-      display: block;
-      margin-top: -2px;
-      
-    }
-
-    .button {
-        padding: 0.5rem 0.7rem;
-        border-radius: 7rem;
-        font-size: 0.7rem;
-        letter-spacing: 0.1rem;
-        margin-top: 18px;
-        margin-right: 10px;
-    }
-    
-}  
-
+  .header-right {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    margin-top: -2px;
+  }
+  .button {
+    padding: 0.5rem 0.7rem;
+    border-radius: 7rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    margin-top: 18px;
+    margin-right: 10px;
+  }
+}
 
 /* end header  */
 
 /*konten dibawah landpage*/
-.testimoni{
+
+.testimoni {
   height: 10px;
 }
-.testimoni-1{
-   letter-spacing: 3px;
-   font-size: 30px;
-   text-align: center;
-}
-.testi-2{
-    size: 10px;
-    float: left;
-    padding-left: 50px;
 
-    }
+.testimoni-1 {
+  letter-spacing: 3px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.testi-2 {
+  size: 10px;
+  float: left;
+  padding-left: 50px;
+}
 
 /*land-page */
+
 .land-page {
   margin-top: 65px;
-  margin-bottom: 120px;
   background-image: url(img/land.jpg);
   height: calc(100vh - 65px);
-  background-image: 100% auto;
-
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
-.icon-list h1{
+.icon-list h1 {
   font-size: 35px;
   margin-bottom: 5px;
   letter-spacing: 4px;
@@ -186,10 +188,10 @@ a {
   padding-top: 40vh;
   color: white;
   font-family: "Courier New", Courier, monospace;
-  border-bottom : 2px solid #dee7ec;
+  border-bottom: 2px solid #dee7ec;
 }
 
-.icon-list p{
+.icon-list p {
   opacity: 0.9;
   font-size: 20px;
   text-align: center;
@@ -198,215 +200,203 @@ a {
 }
 
 /* Konten Tambahan */
+
 * {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
- }
-    html,body{
-     height: 100%;
-     margin: 0;
-     padding: 0;
-    }
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
 
-    /* Mulai Konten Tambahan @rizkytri */
-    
-    main > .kontainer-tambahan-atas{
-        background-color: #fff;
-        padding-left: 180px;
-    }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-    .dua-kolom{
-        text-align: center;
-        float: left;
-        width: 50%;
-    }
+/* Mulai Konten Tambahan @rizkytri */
 
-    .dua-kolom> h2{
-        padding-top: 3em;
-        padding-right: 3em;
-    }
+main>.kontainer-tambahan-atas {
+  background-color: #fff;
+  padding: 10vw 0;
+}
 
-    .studio{
-        max-width: 500px;
-        max-height: 500px;
-    }
+.dua-kolom {
+  text-align: center;
+  float: left;
+  width: 50%;
+}
 
-    main > .kontainer-tambahan-bawah{
-        background-color: #fff;   
-    }
+.dua-kolom>h2 {
+  padding-top: 3em;
+  padding-right: 3em;
+}
 
-    .kontainer-tambahan-bawah > h2{
-        padding-top: 2em;
-        text-align: center;
-        padding-bottom: 2em;
-    }
+.studio {
+  max-width: 500px;
+  max-height: 500px;
+}
 
-    .empat-kolom {
-        text-align: center;
-        float: left;
-        width: 25%;
-        padding: 10px;
-      }
+main>.kontainer-tambahan-bawah {
+  background-color: #fff;
+}
 
-    .ikon{
-        max-width: 100px;
-    }
+.kontainer-tambahan-bawah>h2 {
+  text-align: center;
+  padding-bottom: 2em;
+}
 
-    .baris::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+.empat-kolom {
+  text-align: center;
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
 
-    .email{
-        background-color: #dfddde;
-        padding-left: 55px;
-        margin: 0;
-    }
+.ikon {
+  max-width: 100px;
+}
 
-    .inText{
-          display: block;
-          margin-bottom: 1em;
-          width: 350px;
-          height: 30px;
-    }
+.baris::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-    .inArea{
-        height: 100px;
-        width: 350px;
-    }
+.email {
+  background-color: #dfddde;
+  padding-left: 55px;
+  margin: 0;
+  padding: 5vw;
+}
 
-    .inKirim{
-          margin-left: 297px;
-          background-color: black;
-          color: white;
-    }
+.inText {
+  display: block;
+  margin-bottom: 1em;
+  width: 350px;
+  height: 30px;
+}
 
-    @media screen and (max-width: 992px) {
-        main > .kontainer-tambahan-atas{
-            padding-left: 0px;
-        }
-        .dua-kolom >img{
-            padding-top: 2em;
-        }
-        .dua-kolom> h2{
-            font-size: medium;
-        }
+.inArea {
+  height: 100px;
+  width: 350px;
+}
 
-        .studio{
-            max-width: 240px;
-            max-height: 240px;
-        }
-        
-        .ikon{
-            max-width: 80px;
-        }
-        .empat-kolom {
-            text-align: center;
-            float: left;
-            width: 50%;
-            padding: 10px;
-          }
+.inKirim {
+  margin-left: 297px;
+  background-color: black;
+  color: white;
+}
 
-          /*footer responsive*/
-          .footer {
-              height: 120px;
-              padding: 10px 20px;
-          }
+@media screen and (max-width: 992px) {
+  main>.kontainer-tambahan-atas {
+    padding-left: 0px;
+  }
+  .dua-kolom>img {
+    padding-top: 2em;
+  }
+  .dua-kolom>h2 {
+    font-size: medium;
+  }
+  .studio {
+    max-width: 240px;
+    max-height: 240px;
+  }
+  .ikon {
+    max-width: 80px;
+  }
+  .empat-kolom {
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  /*footer responsive*/
+  .footer {
+    height: 120px;
+    padding: 10px 20px;
+  }
+  .footer-logo {
+    float: left;
+    padding: 5px 3px;
+  }
+  .footer-list {
+    float: right;
+    padding-top: 3px;
+  }
+  .footer-list li {
+    float: none;
+    padding: 2px 3px;
+    font-size: 12px;
+  }
+  .footer-list a {
+    display: block;
+    font-style: normal;
+  }
+}
 
-          .footer-logo {
-              float: left;
-              padding: 5px 3px;
-          }
+@media screen and (max-width: 600px) {
+  .dua-kolom {
+    width: 100%;
+  }
+  .dua-kolom>h2 {
+    padding-left: 3em;
+  }
+  .empat-kolom {
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+  .inText {
+    display: block;
+    margin-bottom: 1em;
+    width: 150px;
+  }
+  .inArea {
+    width: 150px;
+  }
+  .inKirim {
+    margin-left: 98px;
+  }
+}
 
-          .footer-list  {
-              float: right;
-              padding-top: 3px;
-          }
+/* Selesai Konten Tambahan @rizkytri */
 
-         .footer-list li {
-             float: none;
-             padding: 2px 3px;
-             font-size: 12px;
-          }
+/*footer responsive*/
 
-         .footer-list a {
-             display: block;
-             font-style: normal;
-          }
-      }
+.footer {
+  height: 90px;
+}
 
-      @media screen and (max-width: 600px) {
-       .dua-kolom{
-           width: 100%;
-       }
+.footer-logo {
+  float: inherit;
+  padding: 0px;
+  margin: 2px 139px 0px;
+}
 
-       .dua-kolom> h2{
-        padding-left: 3em;
-    }
-       
-     
-        .empat-kolom {
-            text-align: center;
-            float: left;
-            width: 100%;
-            padding: 10px;
-        }
+.footer-list {
+  float: left;
+  padding: 0px;
+  margin: 0px
+}
 
-        .inText{
-            display: block;
-            margin-bottom: 1em;
-            width: 150px;
-        }
+.footer-list li {
+  float: left;
+  padding: 3px 5px;
+  text-align: center;
+  margin: 1px 15px;
+}
 
-        .inArea{
-          width: 150px;
-        }
+/* Footer..... */
 
-        .inKirim{
-            margin-left: 98px;
-        }
-      }
-
-
-      /* Selesai Konten Tambahan @rizkytri */
-      /*footer responsive*/
-        .footer {
-            height: 90px;
-        }
-
-        .footer-logo {
-            float: inherit;
-            padding: 0px;
-            margin: 2px 139px 0px;
-        }
-
-        .footer-list {
-            float: left;
-            padding: 0px;
-            margin: 0px
-        }
-
-        .footer-list li{
-            float: left;
-            padding: 3px 5px;
-            text-align: center;
-            margin: 1px 15px;
-        }
-      }
-
-      /* Footer..... */
 li {
   list-style: none;
 }
-
 
 .footer {
   background-color: #B0C4DE;
   color: black;
   height: 160px;
   padding: 10px 15px;
-
 }
 
 .footer-logo {
@@ -422,15 +412,14 @@ li {
 .footer-list {
   float: right;
   padding-top: 10px;
-
 }
 
 .footer-list li {
   padding-bottom: 5px;
   text-align: right;
 }
-.footer-list a{
+
+.footer-list a {
   font-display: block;
   color: #fff;
 }
-
