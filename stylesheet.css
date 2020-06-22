@@ -175,7 +175,7 @@ header {
 .land-page {
   margin-top: 65px;
   background-image: url(img/land.jpg);
-  height: calc(100vh - 65px);
+  height: calc(100vmin - 65px);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -185,7 +185,7 @@ header {
   margin-bottom: 5px;
   letter-spacing: 4px;
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 20vw;
   color: white;
   font-family: "Courier New", Courier, monospace;
   border-bottom: 2px solid #dee7ec;
@@ -216,7 +216,7 @@ html, body {
 
 main>.kontainer-tambahan-atas {
   background-color: #fff;
-  padding: 10vw 0;
+  padding: 8vw 0;
 }
 
 .dua-kolom {
@@ -422,4 +422,10 @@ li {
 .footer-list a {
   font-display: block;
   color: #fff;
+}
+
+@media only screen and (max-width:425px) {
+  .icon-list h1 {
+    font-size: 25px;
+  }
 }
